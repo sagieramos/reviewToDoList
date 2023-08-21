@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+}
+
+* {
+  font-size: 16px;
+  font-weight: 400;
+  color: #3d3d3d;
+}
+
+.container {
+  max-width: 600px;
+  min-width: 300px;
+  width: 86%;
+  margin: 12px auto;
+  padding: 0 12px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#confirm-edit {
+  background-color: #3498db;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  margin-top: 6px;
+}
+
+.headline {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+  align-items: center;
+}
+
+#refreshSvg {
+  fill: #8b8a8a;
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li.task {
+  padding: 10px 25px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+.treeDots {
+  border: none;
+  background: none;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  cursor: pointer;
+}
+
+li.task.completed {
+  text-decoration: line-through;
+}
+
+.completed-checkbox {
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+#task-list {
+  margin-bottom: 0;
+}
+
+#clearCompleted {
+  background: none;
+  border: none;
+  text-align: center;
+  padding: 10px 0;
+  color: #8b8a8a;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+#edit-input {
+  width: 100%;
+  overflow-wrap: break-word;
+  overflow: auto;
+  resize: vertical;
+  padding: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border-color: #3498db;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.task-description {
+  width: 90%;
+}
+
+input::placeholder {
+  font-style: italic;
+}
